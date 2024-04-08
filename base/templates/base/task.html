@@ -1,0 +1,11 @@
+{% extends "base/main.html" %}
+{% block body %}
+<div class ="header-bar">
+    <a href ="{% url 'tasks' %}">&#8592;Back</a>
+</div>
+<div class = "card-body">
+    <h1>TASK:{{task}} </h1>
+<h1>TASK DESCRIPTION:{{task.description}} </h1>
+</div>
+
+{% endblock body %}
